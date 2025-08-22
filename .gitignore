@@ -1,0 +1,31 @@
+# Ignorar Extras Lazarus
+*.~*          # Ignorar Archivos De BackUp Temporales
+backup/       # Carpeta BackUp Lazarus
+*.lpi.user    # COnfiguración De Usuario Lazarus
+*.ico         # Icon Opcional, Tal Vez se Agregue Uno Después
+*.res         # .res Lazarus, Por Si Se Utiliza Más ADelante
+
+
+# Ignorar Archivos Siguientes
+
+
+# Ignorar Carpetas
+.resources/
+.backup/
+
+#Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar Binarios Y Compilados
+*.class
+*.o
+*.exe
+*.ppu
+*.a
+*.so
+*.dll
+*.res
+

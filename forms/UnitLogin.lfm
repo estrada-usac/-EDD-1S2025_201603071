@@ -1,0 +1,62 @@
+object FormLogin: TFormLogin
+  Left = 100
+  Height = 292
+  Top = 100
+  Width = 527
+  Caption = 'Login'
+  ClientHeight = 292
+  ClientWidth = 527
+  object EditUser: TEdit
+    Left = 232
+    Height = 35
+    Top = 88
+    Width = 232
+    TabOrder = 0
+  end
+  object LMailEDD: TLabel
+    Left = 184
+    Height = 49
+    Top = 16
+    Width = 154
+    Caption = 'MailEDD'
+    Font.Height = -40
+    ParentFont = False
+  end
+  object LUsuario: TLabel
+    Left = 80
+    Height = 18
+    Top = 96
+    Width = 134
+    Caption = 'Nombre De Usuario:'
+  end
+  object EditPass: TEdit
+    Left = 232
+    Height = 35
+    Top = 136
+    Width = 232
+    TabOrder = 1
+  end
+  object BtnLogin: TButton
+    Left = 217
+    Height = 25
+    Top = 216
+    Width = 75
+    Caption = 'Ingresar'
+    TabOrder = 2
+    OnClick = BtnLoginClick
+  end
+  object LPassword: TLabel
+    Left = 80
+    Height = 18
+    Top = 144
+    Width = 137
+    Caption = 'Ingresar Contraseña:'
+  end
+  object LRegistrar: TLabel
+    Left = 217
+    Height = 18
+    Top = 248
+    Width = 82
+    Caption = 'Registrarme'
+  end
+end

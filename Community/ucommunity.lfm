@@ -1,0 +1,97 @@
+object Form1: TForm1
+  Left = 1200
+  Height = 343
+  Top = 174
+  Width = 764
+  Caption = 'Form1'
+  ClientHeight = 343
+  ClientWidth = 764
+  object Label1: TLabel
+    Left = 240
+    Height = 59
+    Top = 16
+    Width = 315
+    Caption = 'COMUNIDADES'
+    Font.Height = -43
+    Font.Name = 'Sans'
+    ParentFont = False
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 328
+    Top = 72
+    Width = 752
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpLeft
+    object TabSheet1: TTabSheet
+      Caption = 'Crear Comunidad'
+      ClientHeight = 324
+      ClientWidth = 609
+      object Label2: TLabel
+        Left = 224
+        Height = 18
+        Top = 24
+        Width = 156
+        Caption = 'Nombre De Comunidad'
+      end
+      object Edit1: TEdit
+        Left = 128
+        Height = 35
+        Top = 56
+        Width = 352
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Left = 256
+        Height = 32
+        Top = 128
+        Width = 96
+        Caption = 'Crear'
+        TabOrder = 1
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Agregar Usuarios'
+      ClientHeight = 324
+      ClientWidth = 609
+      object Label3: TLabel
+        Left = 112
+        Height = 18
+        Top = 56
+        Width = 77
+        Caption = 'Comunidad'
+      end
+      object Edit2: TEdit
+        Left = 224
+        Height = 35
+        Top = 48
+        Width = 248
+        TabOrder = 0
+      end
+      object Label4: TLabel
+        Left = 104
+        Height = 18
+        Top = 106
+        Width = 101
+        Caption = 'Correo Usuario'
+      end
+      object Edit3: TEdit
+        Left = 224
+        Height = 35
+        Top = 96
+        Width = 248
+        TabOrder = 1
+      end
+      object Button2: TButton
+        Left = 256
+        Height = 25
+        Top = 168
+        Width = 75
+        Caption = 'Agregar'
+        TabOrder = 2
+      end
+    end
+  end
+end

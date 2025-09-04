@@ -4,15 +4,49 @@ unit LoginLogic;
 
 interface
 
-function ValidateLogin(const User, Password: string): Boolean;
+uses
+    IUserList, SysUtils;
+
+type
+    TLoginLogic = Class
+      private
+         FUserList: IUserList;
+
+      public
+         constructor Create(AUserList: IUserList);
+         function Authenticate(const AUsername, APassword: string): Boolean;
+    end;
 
 implementation
 
-function ValidateLogin(const User, Password: string): Boolean;
-begin
-  Result := (User = 'admin') and (Password = '1234');
-end;
+  constructor TLoginLogic.Create(AUserList: IUserList);
+  begin
+       FUserList := AUserList;
+  end;
+
+  function TLoginLogic.Authenticate(const AUsername, APassword: string): Boolean;
+  var
+     User: IUser;
+  begin
+       Result := False;
+
+       // Find User By Username
+       User := FUserList.FindUserByUsername(AUsername);
+
+       // Verify Password Match
+       if User <>  nil then
+          Result := User.GetPass = APassword;
+  end;
 
 end.
+
+
+
+
+
+
+
+
+
 
 

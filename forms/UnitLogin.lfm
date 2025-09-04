@@ -6,6 +6,7 @@ object FormLogin: TFormLogin
   Caption = 'Login'
   ClientHeight = 292
   ClientWidth = 527
+  LCLVersion = '4.2.0.0'
   object EditUser: TEdit
     Left = 232
     Height = 35

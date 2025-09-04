@@ -7,12 +7,12 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // Necesario para LCL
-  Forms,
-  UnitLogin in 'forms/UnitLogin.pas', LoginLogic;
-
+  Forms, UnitLogin, LoginLogic, IUserList, IUser, User, userlist;
+  Forms;
 {$R *.res}
 
 begin
+  Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TFormLogin, FormLogin);
   Application.Run;
